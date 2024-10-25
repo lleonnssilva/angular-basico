@@ -1,0 +1,22 @@
+<h1>Input</h1>
+<h1>{{nome}}</h1>
+<h1>{{cidade}}</h1>
+<input type="text" [(ngModel)]="nome">
+<hr>
+<h1>Form</h1>
+<form>
+    <input type="text" name="nome" [(ngModel)]="nome" placeholder="Nome">
+    <input type="text" name="cidade" [(ngModel)]="cidade" placeholder="Cidade">
+</form>
+
+<hr>
+
+<h1>Form Reactive</h1>
+<p>{{formulario.value.nome}}</p>
+<p>{{formulario.value.cidade}}</p>
+<form [formGroup]="formulario">
+    <input type="text" formControlName="nome" placeholder="Nome">
+    <input type="text" formControlName="cidade"  placeholder="Cidade">
+</form>
+
+<hr>

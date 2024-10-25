@@ -1,0 +1,23 @@
+
+<h1>If</h1>
+@if(media > 7){
+    <h1>Aluno Aprovado</h1>
+}@else if(media > 5){
+    <h1>Aluno em Exame</h1>
+}@else{
+    <h1>Aluno Reprovado</h1>
+}
+<hr>
+<h1>For</h1>
+@for (n of nomes; track $index){
+    <p>{{n}} - {{$index}}</p>
+}
+
+<hr>
+<h1>Switch</h1>
+@switch (linguagem){
+    @case ('HTML') {<p>Linguagem de marcação</p>}
+    @case ('CSS') {<p>Linguagem de estilo</p>}
+    @case ('JS') {<p>Linguagem de programação</p>}
+    @default {<p>Linguagem não encontrada</p>}
+}

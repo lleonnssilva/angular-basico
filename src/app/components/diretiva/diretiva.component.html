@@ -1,0 +1,31 @@
+<h1>ngIf</h1>
+<button (click)="acao()">Exibir/Esconder div</button>
+<div class="quadrado" *ngIf="exibir"></div>
+<hr>
+
+<h1>ngFor</h1>
+<ul>
+    <li *ngFor="let nome of nomes; index as indice">{{nome}} - {{indice}}</li>
+</ul>
+<hr>
+
+<h1>ngSwitch</h1>
+<div [ngSwitch]="linguagem">
+    <p *ngSwitchCase="'HTML'">Liguagem de marcação</p>
+    <p *ngSwitchCase="'CSS'">Linguagem de estilo</p>
+    <p *ngSwitchCase="'JS'">Linguagem de programação</p>
+    <p *ngSwitchDefault>Liguagem não encontrada</p>
+</div>
+<hr>
+
+<h1 [ngStyle]="{'color': condicao ?'green' : 'red'}">ngStyle</h1>
+<ul>
+    <li *ngFor="let item of lista" [ngStyle]="{'color': item == 'Aprovado'?'green' : 'red'}">{{item}}</li>
+</ul>
+<hr>
+
+<h1>ngClass</h1>
+<ul>
+    <li *ngFor="let item of lista" [ngClass]="item == 'Aprovado'?'fonteVerde' : 'fonteVermelha'">{{item}}</li>
+</ul>
+<hr>

@@ -1,0 +1,6 @@
+https://ralflima.com/treinamentos/angular17/03criar_executar.php
+https://v17.angular.io/cli
+npm install -g @angular/cli@17
+ng version
+ng new angular-basico
+ng s
